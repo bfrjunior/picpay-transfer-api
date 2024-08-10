@@ -3,6 +3,7 @@ package tech.buildrun.picpay.service;
 import org.springframework.stereotype.Service;
 import tech.buildrun.picpay.controller.dto.CreateWalletDto;
 import tech.buildrun.picpay.entity.Wallet;
+import tech.buildrun.picpay.exception.WalletDataAlreadyExistsException;
 import tech.buildrun.picpay.repository.WalletRepository;
 
 @Service
