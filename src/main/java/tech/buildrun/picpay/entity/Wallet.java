@@ -20,7 +20,7 @@ public class Wallet {
     private long id;
 
     @Column(name = "full_name")
-    private String fullname;
+    private String fullName;
 
     @Column(name = "cpf_cnpj", unique = true)
     private String cpfCnpj;
@@ -41,8 +41,8 @@ public class Wallet {
     public Wallet() {
     }
 
-    public Wallet(String fullname, String cpfCnpj, String email, String password, WalletType walletType) {
-        this.fullname = fullname;
+    public Wallet(String fullName, String cpfCnpj, String email, String password, WalletType walletType) {
+        this.fullName = fullName;
         this.cpfCnpj = cpfCnpj;
         this.email = email;
         this.password = password;
@@ -58,11 +58,11 @@ public class Wallet {
     }
 
     public String getFullname() {
-        return fullname;
+        return fullName;
     }
 
     public void setFullname(String fullname) {
-        this.fullname = fullname;
+        this.fullName = fullname;
     }
 
     public String getCpfCnpj() {

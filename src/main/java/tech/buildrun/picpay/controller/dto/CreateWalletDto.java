@@ -1,13 +1,15 @@
 package tech.buildrun.picpay.controller.dto;
 
+import io.micrometer.common.lang.NonNull;
+import jakarta.validation.constraints.NotBlank;
 import tech.buildrun.picpay.entity.Wallet;
 import tech.buildrun.picpay.entity.WalletType;
 
-public record CreateWalletDto(String fullName,
-        String cpfCnpj,
-        String email,
-        String password,
-        WalletType.Enum walletType) {
+public record CreateWalletDto(@NotBlank String fullName,
+        @NotBlank String cpfCnpj,
+        @NotBlank String email,
+        @NotBlank String password,
+        @NonNull WalletType.Enum walletType) {
 
     public Wallet toWallet() {
 
