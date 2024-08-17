@@ -1,6 +1,6 @@
 package tech.buildrun.picpay.controller;
 
-import feign.Response;
+
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
